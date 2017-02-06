@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Dating Site</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<h1>Details</h1>
+<form enctype="multipart/form-data">
+<fieldset id="back">
+	<legend>Your face</legend>
+	<label id="lab" for="image">Your image:</label>
+	<input type="file" name="file upload" id="image" name="image" required><br>
+	<label id="lab" for="imageprev">Image Preview:</label>
+	<img id="preview" src="#" alt="Your image" width="25%"/>
+	<script src="script.js"></script>
+</fieldset>
+<fieldset id="back">
+	<legend>Your General Details</legend>
+    <label for="name" id="lab">Name:</label>
+	<input type="text" id="name" name="name" required><br>
+	<label for="Gender" id="lab">Gender:</label>
+	<input type="radio" name="Gender" value="male" required>Male
+	<input type="radio" name="Gender" value="female" required>Female<br>
+	<label for="age" id="lab">Age:</label>
+	<input type="number" id="age" name="age" value="18" required><br>
+	<label for="birthday" id="lab">Date of birth:</label>
+	<input type="date" name="birthday" id="birthday"><br>
+	<label for="color" id="lab">Favorite color:</label>
+	<input type="color" name="color" id="color"><br>
+	<label for="country" id="lab">Which country</label>
+	<select name="country" id="lab1">
+		<option value="ns">No selection</option>
+		<option value="Ch">China</option>
+		<option value="Ind">India</option>
+		<option value="Aus">Australia</option>
+		<option value="US">America</option>
+		<option value="Sgr">Singapore</option>		
+	</select>
+</fieldset>
+<fieldset id="back">
+	<legend>Your indicators</legend>
+	<label for="height" id="lab">Height:</label>
+	<span id="al">Short</span><input type="range" min="0" max="100" steps="5" value="50" id="height" name="height"><span id="al">Tall</span><br>
+</fieldset>
+<fieldset id="back">
+	<legend>Your Contact Information</legend>
+	<label for="email" id="lab">Email:</label>
+	<input type="email" name="email" id="email" required><br>
+	<label for="phone" id="lab">Mobile:</label>
+	<input type="tel" id="phone:" name="phone"><br>
+	<label for="address" id="lab">Address:</label>
+	<textarea class="area" id="address" name="address"></textarea><br>
+	<label for="contact" id="lab">Method to Contact You:</label>
+	<input type="checkbox" name="contact" value="email" id="lab1">Email
+	<input type="checkbox" name="contact" value="whatsapp" id="lab1">Whatsapp
+	<input type="checkbox" name="contact" value="in-app chat" id="lab1">In-app chat
+</fieldset>
+	<input type="submit" value="Submit">
+	
+</form>
+</body>
+</html>
