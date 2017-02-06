@@ -1,0 +1,32 @@
+#back {
+	background-color: lightyellow;
+	border:10px solid yellow;
+	margin-bottom: 10px;
+	width: 720px;
+
+}
+
+#lab {
+	width:180px;
+	display:inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+
+#lab1 {
+	width:auto;
+}
+
+.area {
+	width:360px;
+	height:50px;
+}
+
+#al {
+	text-align: center;
+	background-color: lightblue;
+}
+
+label:hover {
+	font-size:25px;
+}
